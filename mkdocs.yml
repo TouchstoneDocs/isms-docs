@@ -1,4 +1,10 @@
-site_name: ISMS-P 인증기준 안내서(2022.4.22)
+site_name: 정보보호 및 개인정보보호 관리체계(ISMS-P) 인증기준 안내서(2022.4)
+
 theme: 
   # name: readthedocs
   name: material
+
+markdown_extensions:
+    - smarty
+    - toc:
+        permalink: True
