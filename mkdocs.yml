@@ -4,7 +4,12 @@ theme:
   # name: readthedocs
   name: material
 
+plugins:
+  - search
+  - autolinks 
+
 markdown_extensions:
-    - smarty
-    - toc:
-        permalink: True
+  # - smarty
+  - toc:
+      permalink: True
+      slugify: !!python/name:pymdownx.slugs.uslugify
