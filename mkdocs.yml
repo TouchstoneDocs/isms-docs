@@ -13,3 +13,4 @@ markdown_extensions:
   - toc:
       permalink: True
       slugify: !!python/name:pymdownx.slugs.uslugify
+  - attr_list
