@@ -1,0 +1,1826 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+    
+    
+      
+        <title>2.6.3 응용프로그램 접근 - 정보보호 및 개인정보보호 관리체계(ISMS-P) 인증기준 안내서(2022.4)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.c382b1dc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#263-응용프로그램-접근" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="정보보호 및 개인정보보호 관리체계(ISMS-P) 인증기준 안내서(2022.4)" class="md-header__button md-logo" aria-label="정보보호 및 개인정보보호 관리체계(ISMS-P) 인증기준 안내서(2022.4)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            정보보호 및 개인정보보호 관리체계(ISMS-P) 인증기준 안내서(2022.4)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2.6.3 응용프로그램 접근
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="정보보호 및 개인정보보호 관리체계(ISMS-P) 인증기준 안내서(2022.4)" class="md-nav__button md-logo" aria-label="정보보호 및 개인정보보호 관리체계(ISMS-P) 인증기준 안내서(2022.4)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    정보보호 및 개인정보보호 관리체계(ISMS-P) 인증기준 안내서(2022.4)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        정보보호 및 개인정보보호 관리체계 인증기준 개요
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          1. 관리체계 수립 및 운영
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="1. 관리체계 수립 및 운영" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          1. 관리체계 수립 및 운영
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1">
+          1.1 관리체계 기반 마련
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="1.1 관리체계 기반 마련" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          1.1 관리체계 기반 마련
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.1%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EA%B8%B0%EB%B0%98%20%EB%A7%88%EB%A0%A8/1.1.1%20%EA%B2%BD%EC%98%81%EC%A7%84%EC%9D%98%20%EC%B0%B8%EC%97%AC/" class="md-nav__link">
+        1.1.1 경영진의 참여
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.1%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EA%B8%B0%EB%B0%98%20%EB%A7%88%EB%A0%A8/1.1.2%20%EC%B5%9C%EA%B3%A0%EC%B1%85%EC%9E%84%EC%9E%90%EC%9D%98%20%EC%A7%80%EC%A0%95/" class="md-nav__link">
+        1.1.2 최고책임자의 지정
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.1%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EA%B8%B0%EB%B0%98%20%EB%A7%88%EB%A0%A8/1.1.3%20%EC%A1%B0%EC%A7%81%20%EA%B5%AC%EC%84%B1/" class="md-nav__link">
+        1.1.3 조직 구성
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.1%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EA%B8%B0%EB%B0%98%20%EB%A7%88%EB%A0%A8/1.1.4%20%EB%B2%94%EC%9C%84%20%EC%84%A4%EC%A0%95/" class="md-nav__link">
+        1.1.4 범위 설정
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.1%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EA%B8%B0%EB%B0%98%20%EB%A7%88%EB%A0%A8/1.1.5%20%EC%A0%95%EC%B1%85%20%EC%88%98%EB%A6%BD/" class="md-nav__link">
+        1.1.5 정책 수립
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.1%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EA%B8%B0%EB%B0%98%20%EB%A7%88%EB%A0%A8/1.1.6%20%EC%9E%90%EC%9B%90%20%ED%95%A0%EB%8B%B9/" class="md-nav__link">
+        1.1.6 자원 할당
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          1.2 위험 관리
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="1.2 위험 관리" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          1.2 위험 관리
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.2%20%EC%9C%84%ED%97%98%20%EA%B4%80%EB%A6%AC/1.2.1%20%EC%A0%95%EB%B3%B4%EC%9E%90%EC%82%B0%20%EC%8B%9D%EB%B3%84/" class="md-nav__link">
+        1.2.1 정보자산 식별
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.2%20%EC%9C%84%ED%97%98%20%EA%B4%80%EB%A6%AC/1.2.2%20%ED%98%84%ED%99%A9%20%EB%B0%8F%20%ED%9D%90%EB%A6%84%EB%B6%84%EC%84%9D/" class="md-nav__link">
+        1.2.2 현황 및 흐름분석
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.2%20%EC%9C%84%ED%97%98%20%EA%B4%80%EB%A6%AC/1.2.3%20%EC%9C%84%ED%97%98%20%ED%8F%89%EA%B0%80/" class="md-nav__link">
+        1.2.3 위험 평가
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.2%20%EC%9C%84%ED%97%98%20%EA%B4%80%EB%A6%AC/1.2.4%20%EB%B3%B4%ED%98%B8%EB%8C%80%EC%B1%85%20%EC%84%A0%EC%A0%95/" class="md-nav__link">
+        1.2.4 보호대책 선정
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          1.3 관리체계 운영
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="1.3 관리체계 운영" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          1.3 관리체계 운영
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.3%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%9A%B4%EC%98%81/1.3.1%20%EB%B3%B4%ED%98%B8%EB%8C%80%EC%B1%85%20%EA%B5%AC%ED%98%84/" class="md-nav__link">
+        1.3.1 보호대책 구현
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.3%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%9A%B4%EC%98%81/1.3.2%20%EB%B3%B4%ED%98%B8%EB%8C%80%EC%B1%85%20%EA%B3%B5%EC%9C%A0/" class="md-nav__link">
+        1.3.2 보호대책 공유
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.3%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%9A%B4%EC%98%81/1.3.3%20%EC%9A%B4%EC%98%81%ED%98%84%ED%99%A9%20%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        1.3.3 운영현황 관리
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4">
+          1.4 관리체계 점검 및 개선
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="1.4 관리체계 점검 및 개선" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          1.4 관리체계 점검 및 개선
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.4%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%A0%90%EA%B2%80%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0/1.4.1%20%EB%B2%95%EC%A0%81%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EC%A4%80%EC%88%98%20%EA%B2%80%ED%86%A0/" class="md-nav__link">
+        1.4.1 법적 요구사항 준수 검토
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.4%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%A0%90%EA%B2%80%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0/1.4.2%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%A0%90%EA%B2%80/" class="md-nav__link">
+        1.4.2 관리체계 점검
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1.%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%88%98%EB%A6%BD%20%EB%B0%8F%20%EC%9A%B4%EC%98%81/1.4%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EC%A0%90%EA%B2%80%20%EB%B0%8F%20%EA%B0%9C%EC%84%A0/1.4.3%20%EA%B4%80%EB%A6%AC%EC%B2%B4%EA%B3%84%20%EA%B0%9C%EC%84%A0/" class="md-nav__link">
+        1.4.3 관리체계 개선
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          2. 보호대책 요구사항
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2. 보호대책 요구사항" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          2. 보호대책 요구사항
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1">
+          2.1 정책, 조직, 자산 관리
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2.1 정책, 조직, 자산 관리" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          2.1 정책, 조직, 자산 관리
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.1%20%EC%A0%95%EC%B1%85%2C%20%EC%A1%B0%EC%A7%81%2C%20%EC%9E%90%EC%82%B0%20%EA%B4%80%EB%A6%AC/2.1.1%20%EC%A0%95%EC%B1%85%EC%9D%98%20%EC%9C%A0%EC%A7%80%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        2.1.1 정책의 유지관리
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.1%20%EC%A0%95%EC%B1%85%2C%20%EC%A1%B0%EC%A7%81%2C%20%EC%9E%90%EC%82%B0%20%EA%B4%80%EB%A6%AC/2.1.2%20%EC%A1%B0%EC%A7%81%EC%9D%98%20%EC%9C%A0%EC%A7%80%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        2.1.2 조직의 유지관리
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.1%20%EC%A0%95%EC%B1%85%2C%20%EC%A1%B0%EC%A7%81%2C%20%EC%9E%90%EC%82%B0%20%EA%B4%80%EB%A6%AC/2.1.3%20%EC%A0%95%EB%B3%B4%EC%9E%90%EC%82%B0%20%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        2.1.3 정보자산 관리
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          2.2 인적 보안
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2.2 인적 보안" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          2.2 인적 보안
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.2%20%EC%9D%B8%EC%A0%81%20%EB%B3%B4%EC%95%88/2.2.1%20%EC%A3%BC%EC%9A%94%20%EC%A7%81%EB%AC%B4%EC%9E%90%20%EC%A7%80%EC%A0%95%20%EB%B0%8F%20%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        2.2.1 주요 직무자 지정 및 관리
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.2%20%EC%9D%B8%EC%A0%81%20%EB%B3%B4%EC%95%88/2.2.2%20%EC%A7%81%EB%AC%B4%20%EB%B6%84%EB%A6%AC/" class="md-nav__link">
+        2.2.2 직무 분리
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.2%20%EC%9D%B8%EC%A0%81%20%EB%B3%B4%EC%95%88/2.2.3%20%EB%B3%B4%EC%95%88%20%EC%84%9C%EC%95%BD/" class="md-nav__link">
+        2.2.3 보안 서약
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.2%20%EC%9D%B8%EC%A0%81%20%EB%B3%B4%EC%95%88/2.2.4%20%EC%9D%B8%EC%8B%9D%EC%A0%9C%EA%B3%A0%20%EB%B0%8F%20%EA%B5%90%EC%9C%A1%ED%9B%88%EB%A0%A8/" class="md-nav__link">
+        2.2.4 인식제고 및 교육훈련
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.2%20%EC%9D%B8%EC%A0%81%20%EB%B3%B4%EC%95%88/2.2.5%20%ED%87%B4%EC%A7%81%20%EB%B0%8F%20%EC%A7%81%EB%AC%B4%EB%B3%80%EA%B2%BD%20%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        2.2.5 퇴직 및 직무변경 관리
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.2%20%EC%9D%B8%EC%A0%81%20%EB%B3%B4%EC%95%88/2.2.6%20%EB%B3%B4%EC%95%88%20%EC%9C%84%EB%B0%98%20%EC%8B%9C%20%EC%A1%B0%EC%B9%98/" class="md-nav__link">
+        2.2.6 보안 위반 시 조치
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          2.3 외부자 보안
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2.3 외부자 보안" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          2.3 외부자 보안
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.3%20%EC%99%B8%EB%B6%80%EC%9E%90%20%EB%B3%B4%EC%95%88/2.3.1%20%EC%99%B8%EB%B6%80%EC%9E%90%20%ED%98%84%ED%99%A9%20%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        2.3.1 외부자 현황 관리
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.3%20%EC%99%B8%EB%B6%80%EC%9E%90%20%EB%B3%B4%EC%95%88/2.3.2%20%EC%99%B8%EB%B6%80%EC%9E%90%20%EA%B3%84%EC%95%BD%20%EC%8B%9C%20%EB%B3%B4%EC%95%88/" class="md-nav__link">
+        2.3.2 외부자 계약 시 보안
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.3%20%EC%99%B8%EB%B6%80%EC%9E%90%20%EB%B3%B4%EC%95%88/2.3.3%20%EC%99%B8%EB%B6%80%EC%9E%90%20%EB%B3%B4%EC%95%88%20%EC%9D%B4%ED%96%89%20%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        2.3.3 외부자 보안 이행 관리
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.3%20%EC%99%B8%EB%B6%80%EC%9E%90%20%EB%B3%B4%EC%95%88/2.3.4%20%EC%99%B8%EB%B6%80%EC%9E%90%20%EA%B3%84%EC%95%BD%20%EB%B3%80%EA%B2%BD%20%EB%B0%8F%20%EB%A7%8C%EB%A3%8C%20%EC%8B%9C%20%EB%B3%B4%EC%95%88/" class="md-nav__link">
+        2.3.4 외부자 계약 변경 및 만료 시 보안
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          2.4 물리 보안
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2.4 물리 보안" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          2.4 물리 보안
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.4%20%EB%AC%BC%EB%A6%AC%20%EB%B3%B4%EC%95%88/2.4.1%20%EB%B3%B4%ED%98%B8%EA%B5%AC%EC%97%AD%20%EC%A7%80%EC%A0%95/" class="md-nav__link">
+        2.4.1 보호구역 지정
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.4%20%EB%AC%BC%EB%A6%AC%20%EB%B3%B4%EC%95%88/2.4.2%20%EC%B6%9C%EC%9E%85%ED%86%B5%EC%A0%9C/" class="md-nav__link">
+        2.4.2 출입통제
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.4%20%EB%AC%BC%EB%A6%AC%20%EB%B3%B4%EC%95%88/2.4.3%20%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EB%B3%B4%ED%98%B8/" class="md-nav__link">
+        2.4.3 정보시스템 보호
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.4%20%EB%AC%BC%EB%A6%AC%20%EB%B3%B4%EC%95%88/2.4.4%20%EB%B3%B4%ED%98%B8%EC%84%A4%EB%B9%84%20%EC%9A%B4%EC%98%81/" class="md-nav__link">
+        2.4.4 보호설비 운영
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.4%20%EB%AC%BC%EB%A6%AC%20%EB%B3%B4%EC%95%88/2.4.5%20%EB%B3%B4%ED%98%B8%EA%B5%AC%EC%97%AD%20%EB%82%B4%20%EC%9E%91%EC%97%85/" class="md-nav__link">
+        2.4.5 보호구역 내 작업
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.4%20%EB%AC%BC%EB%A6%AC%20%EB%B3%B4%EC%95%88/2.4.6%20%EB%B0%98%EC%B6%9C%EC%9E%85%20%EA%B8%B0%EA%B8%B0%20%ED%86%B5%EC%A0%9C/" class="md-nav__link">
+        2.4.6 반출입 기기 통제
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.4%20%EB%AC%BC%EB%A6%AC%20%EB%B3%B4%EC%95%88/2.4.7%20%EC%97%85%EB%AC%B4%ED%99%98%EA%B2%BD%20%EB%B3%B4%EC%95%88/" class="md-nav__link">
+        2.4.7 업무환경 보안
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          2.5 인증 및 권한관리
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2.5 인증 및 권한관리" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          2.5 인증 및 권한관리
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.5%20%EC%9D%B8%EC%A6%9D%20%EB%B0%8F%20%EA%B6%8C%ED%95%9C%EA%B4%80%EB%A6%AC/2.5.1%20%EC%82%AC%EC%9A%A9%EC%9E%90%20%EA%B3%84%EC%A0%95%20%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        2.5.1 사용자 계정 관리
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.5%20%EC%9D%B8%EC%A6%9D%20%EB%B0%8F%20%EA%B6%8C%ED%95%9C%EA%B4%80%EB%A6%AC/2.5.2%20%EC%82%AC%EC%9A%A9%EC%9E%90%20%EC%8B%9D%EB%B3%84/" class="md-nav__link">
+        2.5.2 사용자 식별
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.5%20%EC%9D%B8%EC%A6%9D%20%EB%B0%8F%20%EA%B6%8C%ED%95%9C%EA%B4%80%EB%A6%AC/2.5.3%20%EC%82%AC%EC%9A%A9%EC%9E%90%20%EC%9D%B8%EC%A6%9D/" class="md-nav__link">
+        2.5.3 사용자 인증
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.5%20%EC%9D%B8%EC%A6%9D%20%EB%B0%8F%20%EA%B6%8C%ED%95%9C%EA%B4%80%EB%A6%AC/2.5.4%20%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8%20%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        2.5.4 비밀번호 관리
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.5%20%EC%9D%B8%EC%A6%9D%20%EB%B0%8F%20%EA%B6%8C%ED%95%9C%EA%B4%80%EB%A6%AC/2.5.5%20%ED%8A%B9%EC%88%98%20%EA%B3%84%EC%A0%95%20%EB%B0%8F%20%EA%B6%8C%ED%95%9C%20%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        2.5.5 특수 계정 및 권한 관리
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.5%20%EC%9D%B8%EC%A6%9D%20%EB%B0%8F%20%EA%B6%8C%ED%95%9C%EA%B4%80%EB%A6%AC/2.5.6%20%EC%A0%91%EA%B7%BC%EA%B6%8C%ED%95%9C%20%EA%B2%80%ED%86%A0/" class="md-nav__link">
+        2.5.6 접근권한 검토
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_6">
+          2.6 접근통제
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2.6 접근통제" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          2.6 접근통제
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.6.1%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%A0%91%EA%B7%BC/" class="md-nav__link">
+        2.6.1 네트워크 접근
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.6.2%20%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%A0%91%EA%B7%BC/" class="md-nav__link">
+        2.6.2 정보시스템 접근
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          2.6.3 응용프로그램 접근
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        2.6.3 응용프로그램 접근
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#인증-기준" class="md-nav__link">
+    인증 기준
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#주요-확인사항" class="md-nav__link">
+    주요 확인사항
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#관련-법규" class="md-nav__link">
+    관련 법규
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#세부-설명" class="md-nav__link">
+    세부 설명
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#증거자료" class="md-nav__link">
+    증거자료
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#결함사례" class="md-nav__link">
+    결함사례
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.6.4%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EC%A0%91%EA%B7%BC/" class="md-nav__link">
+        2.6.4 데이터베이스 접근
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.6.5%20%EB%AC%B4%EC%84%A0%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%A0%91%EA%B7%BC/" class="md-nav__link">
+        2.6.5 무선 네트워크 접근
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.6.6%20%EC%9B%90%EA%B2%A9%EC%A0%91%EA%B7%BC%20%ED%86%B5%EC%A0%9C/" class="md-nav__link">
+        2.6.6 원격접근 통제
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.6.7%20%EC%9D%B8%ED%84%B0%EB%84%B7%20%EC%A0%91%EC%86%8D%20%ED%86%B5%EC%A0%9C/" class="md-nav__link">
+        2.6.7 인터넷 접속 통제
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_7">
+          2.7 암호화 적용
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2.7 암호화 적용" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          2.7 암호화 적용
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.7%20%EC%95%94%ED%98%B8%ED%99%94%20%EC%A0%81%EC%9A%A9/2.7.1%20%EC%95%94%ED%98%B8%EC%A0%95%EC%B1%85%20%EC%A0%81%EC%9A%A9/" class="md-nav__link">
+        2.7.1 암호정책 적용
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.7%20%EC%95%94%ED%98%B8%ED%99%94%20%EC%A0%81%EC%9A%A9/2.7.2%20%EC%95%94%ED%98%B8%ED%82%A4%20%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        2.7.2 암호키 관리
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8" type="checkbox" id="__nav_3_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_8">
+          2.8 정보시스템 도입 및 개발 보안
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2.8 정보시스템 도입 및 개발 보안" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_8">
+          <span class="md-nav__icon md-icon"></span>
+          2.8 정보시스템 도입 및 개발 보안
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.8%20%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EB%8F%84%EC%9E%85%20%EB%B0%8F%20%EA%B0%9C%EB%B0%9C%20%EB%B3%B4%EC%95%88/2.8.1%20%EB%B3%B4%EC%95%88%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EC%A0%95%EC%9D%98/" class="md-nav__link">
+        2.8.1 보안 요구사항 정의
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.8%20%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EB%8F%84%EC%9E%85%20%EB%B0%8F%20%EA%B0%9C%EB%B0%9C%20%EB%B3%B4%EC%95%88/2.8.2%20%EB%B3%B4%EC%95%88%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EA%B2%80%ED%86%A0%20%EB%B0%8F%20%EC%8B%9C%ED%97%98/" class="md-nav__link">
+        2.8.2 보안 요구사항 검토 및 시험
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.8%20%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EB%8F%84%EC%9E%85%20%EB%B0%8F%20%EA%B0%9C%EB%B0%9C%20%EB%B3%B4%EC%95%88/2.8.3%20%EC%8B%9C%ED%97%98%EA%B3%BC%20%EC%9A%B4%EC%98%81%20%ED%99%98%EA%B2%BD%20%EB%B6%84%EB%A6%AC/" class="md-nav__link">
+        2.8.3 시험과 운영 환경 분리
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.8%20%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EB%8F%84%EC%9E%85%20%EB%B0%8F%20%EA%B0%9C%EB%B0%9C%20%EB%B3%B4%EC%95%88/2.8.4%20%EC%8B%9C%ED%97%98%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B3%B4%EC%95%88/" class="md-nav__link">
+        2.8.4 시험 데이터 보안
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.8%20%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EB%8F%84%EC%9E%85%20%EB%B0%8F%20%EA%B0%9C%EB%B0%9C%20%EB%B3%B4%EC%95%88/2.8.5%20%EC%86%8C%EC%8A%A4%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        2.8.5 소스 프로그램 관리
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.8%20%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EB%8F%84%EC%9E%85%20%EB%B0%8F%20%EA%B0%9C%EB%B0%9C%20%EB%B3%B4%EC%95%88/2.8.6%20%EC%9A%B4%EC%98%81%ED%99%98%EA%B2%BD%20%EC%9D%B4%EA%B4%80/" class="md-nav__link">
+        2.8.6 운영환경 이관
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#인증-기준" class="md-nav__link">
+    인증 기준
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#주요-확인사항" class="md-nav__link">
+    주요 확인사항
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#관련-법규" class="md-nav__link">
+    관련 법규
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#세부-설명" class="md-nav__link">
+    세부 설명
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#증거자료" class="md-nav__link">
+    증거자료
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#결함사례" class="md-nav__link">
+    결함사례
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="263-응용프로그램-접근">2.6.3 응용프로그램 접근<a class="headerlink" href="#263-응용프로그램-접근" title="Permanent link">&para;</a></h1>
+<h2 id="인증-기준">인증 기준<a class="headerlink" href="#인증-기준" title="Permanent link">&para;</a></h2>
+<p><strong>사용자별 업무 및 접근 정보의 중요도 등에 따라 응용프로그램 접근권한을 제한하고, 불필요한 정보 또는 중요정보 노출을 최소화할 수 있도록 기준을 수립하여 적용하여야 한다.</strong></p>
+<h2 id="주요-확인사항">주요 확인사항<a class="headerlink" href="#주요-확인사항" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>중요정보 접근을 통제하기 위하여 사용자의 업무에 따라 응용프로그램 접근권한을 차등 부여하고 있는가?</p>
+</li>
+<li>
+<p>중요정보의 불필요한 노출(조회, 화면표시, 인쇄, 다운로드 등)을 최소화할 수 있도록 응용프로그램을 구현하여 운영하고 있는가?</p>
+</li>
+<li>
+<p>일정시간 동안 입력이 없는 세션은 자동 차단하고, 동일 사용자의 동시 세션 수를 제한하고 있는가?</p>
+</li>
+<li>
+<p>관리자 전용 응용프로그램(관리자 웹페이지, 관리콘솔 등)은 비인가자가 접근할 수 없도록 접근을 통제하고 있는가?</p>
+</li>
+</ul>
+<h2 id="관련-법규">관련 법규<a class="headerlink" href="#관련-법규" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>개인정보 보호법 <a href="https://www.law.go.kr/법령/개인정보보호법/제29조" target="_blank" title="새 창에서 열기">🔗제29조(안전조치의무)</a></p>
+</li>
+<li>
+<p>개인정보의 안전성 확보조치 기준 <a href="https://www.law.go.kr/행정규칙/(개인정보보호위원회)개인정보의안전성확보조치기준/제5조" target="_blank" title="새 창에서 열기">🔗제5조(접근 권한의 관리)</a>, <a href="https://www.law.go.kr/행정규칙/(개인정보보호위원회)개인정보의안전성확보조치기준/제6조" target="_blank" title="새 창에서 열기">🔗제6조(접근통제)</a></p>
+</li>
+<li>
+<p>개인정보의 기술적·관리적 보호조치 기준 <a href="https://www.law.go.kr/행정규칙/(개인정보보호위원회)개인정보의기술적·관리적보호조치기준/제4조" target="_blank" title="새 창에서 열기">🔗제4조(접근통제)</a></p>
+</li>
+</ul>
+<h2 id="세부-설명">세부 설명<a class="headerlink" href="#세부-설명" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>중요정보의 접근을 통제하기 위하여 사용자의 업무에 따라 응용프로그램 접근권한을 차등 부여하여야 한다.</p>
+<ul>
+<li>
+<p>내부에서 사용하는 응용프로그램(백오피스시스템, 회원관리시스템 등)을 명확하게 식별</p>
+</li>
+<li>
+<p>응용프로그램 중 개인정보를 처리하는 개인정보처리시스템 식별</p>
+</li>
+<li>
+<p>최소권한 원칙에 따른 사용자 및 개인정보취급자 접근권한 분류체계(권한분류표 등) 마련</p>
+</li>
+<li>
+<p>중요정보 및 개인정보 처리(입력, 조회, 변경, 삭제, 다운로드, 출력 등) 권한을 세분화하여 설정할 수 있도록 응용프로그램 기능 구현</p>
+</li>
+<li>
+<p>식별된 응용프로그램 및 개인정보처리시스템에 대한 계정 및 권한을 부여하는 절차 수립·이행</p>
+</li>
+<li>
+<p>권한 부여·변경·삭제 관련 기록을 보관하여 접근권한의 타당성 검토</p>
+</li>
+</ul>
+</li>
+<li>
+<p>중요정보의 불필요한 노출(조회, 화면표시, 인쇄, 다운로드 등)을 최소화할 수 있도록 응용프로그램을 구현하여 운영하여야 한다</p>
+<ul>
+<li>
+<p>응용프로그램(개인정보처리시스템 등)에서 개인정보 등 중요정보 출력 시(인쇄, 화면표시, 다운로드 등) 용도를 특정하고 용도에 따라 출력항목 최소화</p>
+</li>
+<li>
+<p>개인정보 검색 시에는 과도한 정보가 조회되지 않도록 일치검색(equal검색)이나 두 가지 조건 이상의 검색조건 사용 등</p>
+</li>
+</ul>
+</li>
+<li>
+<p>일정시간 동안 입력이 없는 세션은 자동 차단하고, 동일 사용자의 동시 세션 수를 제한하여야 한다.</p>
+<ul>
+<li>
+<p>응용프로그램 및 업무별 특성, 위험의 크기 등을 고려하여 접속유지 시간 결정 및 적용</p>
+</li>
+<li>
+<p>개인정보처리시스템의 경우 법적 요구사항에 따라 일정시간 이상 업무처리를 하지 않는 경우 자동으로 시스템 접속이 차단되도록 조치</p>
+</li>
+<li>
+<p>동일 계정으로 동시 접속 시 경고 문자 표시 및 접속 제한</p>
+</li>
+</ul>
+</li>
+<li>
+<p>관리자 전용 응용프로그램(관리자 웹페이지, 관리콘솔 등)은 비인가자가 접근할 수 없도록 접근을 통제하여야 한다.</p>
+<ul>
+<li>
+<p>관리자 전용 응용프로그램의 외부 공개 차단 및 IP주소 등을 통한 접근제한 조치</p>
+</li>
+<li>
+<p>불가피하게 외부 공개가 필요한 경우 안전한 인증수단(OTP 등) 또는 안전한 접속수단(VPN 등) 적용</p>
+</li>
+<li>
+<p>관리자(사용자), 개인정보취급자의 접속 로그 및 이벤트 로그에 대한 정기적 모니터링</p>
+</li>
+<li>
+<p>이상징후 발견 시 세부조사, 내부보고 등 사전에 정의된 절차에 따라 이행</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="증거자료">증거자료<a class="headerlink" href="#증거자료" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>예시</p>
+<ul>
+<li>
+<p>응용프로그램 접근권한 분류 체계</p>
+</li>
+<li>
+<p>응용프로그램 계정/권한 관리 화면</p>
+</li>
+<li>
+<p>응용프로그램 사용자/관리자 화면(개인정보 조회 등)</p>
+</li>
+<li>
+<p>응용프로그램 세션 타임 및 동시접속 허용 여부 내역</p>
+</li>
+<li>
+<p>응용프로그램 관리자 접속로그 모니터링 내역</p>
+</li>
+<li>
+<p>정보자산 목록</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="결함사례">결함사례<a class="headerlink" href="#결함사례" title="Permanent link">&para;</a></h2>
+<blockquote>
+<ul>
+<li>
+<p>사례 1 : 응용프로그램의 개인정보 처리화면 중 일부 화면의 권한 제어 기능에 오류가 존재하여 개인정보 열람 권한이 없는 사용자에게도 개인정보가 노출되고 있는 경우</p>
+</li>
+<li>
+<p>사례 2 : 응용프로그램의 관리자 페이지가 외부인터넷에 오픈되어 있으면서 안전한 인증수단이 적용되어 있지 않은 경우</p>
+</li>
+<li>
+<p>사례 3 : 응용프로그램에 대하여 타당한 사유 없이 세션 타임아웃 또는 동일 사용자 계정의 동시 접속을 제한하고 있지 않은 경우</p>
+</li>
+<li>
+<p>사례 4 : 응용프로그램을 통하여 개인정보를 다운로드받는 경우 해당 파일 내에 주민등록번호 등 업무상 불필요한 정보가 과도하게 포함되어 있는 경우</p>
+</li>
+<li>
+<p>사례 5 : 응용프로그램의 개인정보 조회화면에서 like 검색을 과도하게 허용하고 있어, 모든 사용자가 본인의 업무 범위를 초과하여 전체 고객 정보를 조회할 수 있는 경우</p>
+</li>
+</ul>
+</blockquote>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../2.6.2%20%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%A0%91%EA%B7%BC/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2.6.2 정보시스템 접근" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              2.6.2 정보시스템 접근
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../2.6.4%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EC%A0%91%EA%B7%BC/" class="md-footer__link md-footer__link--next" aria-label="Next: 2.6.4 데이터베이스 접근" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              2.6.4 데이터베이스 접근
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      
+    
+  </body>
+</html>
