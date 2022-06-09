@@ -2,6 +2,8 @@ site_name: 정보보호 및 개인정보보호 관리체계(ISMS-P) 인증기준
 
 theme: 
   # name: readthedocs
+  # name: rtd-dropdown
+  # name: gitbook
   name: material
 
 plugins:
