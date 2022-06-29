@@ -17,6 +17,12 @@ markdown_extensions:
       slugify: !!python/name:pymdownx.slugs.uslugify
   - attr_list
 
+extra:
+  analytics:
+    provider: google
+    property: G-W5PV2DNJ7J
+
+
 nav:
   - 'index.md'
   - '1. 관리체계 수립 및 운영':
