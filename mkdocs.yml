@@ -1,17 +1,16 @@
 site_name: ISMS-P 인증기준 안내서(2022.4)
 # site_name: 정보보호 및 개인정보보호 관리체계(ISMS-P) 인증기준 안내서(2022.4)
-# site_name: MkDocs
 
 theme:
   language: kr
 #   name: material
 #   name: manuals-theme
-#   name: readthedocs
+  name: readthedocs
 #   name: windmill
 #   name: moonstone
 #   fluid_layout: false
-  name: simplex
-  nav_style: dark
+#   name: simplex
+#   nav_style: dark
 
 plugins:
   - search
