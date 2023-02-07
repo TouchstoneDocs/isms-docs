@@ -148,6 +148,7 @@ nav:
         - '3.5.2 정보주체 권리보장': '3. 개인정보 처리 단계별 요구사항\3.5 정보주체 권리보호\3.5.2 정보주체 권리보장.md'
         - '3.5.3 이용내역 통지': '3. 개인정보 처리 단계별 요구사항\3.5 정보주체 권리보호\3.5.3 이용내역 통지.md'
     - '참고자료': 'references.md'
+    - '관련법령': 'laws.md'
     - '정보': 'about.md'
 
 theme:
@@ -160,7 +161,21 @@ theme:
   
   palette:
     scheme: default
-    # primary: black
+    primary: black
+    
+    # # Palette toggle for light mode
+    # - media: "(prefers-color-scheme: light)"
+    #   scheme: default
+    #   toggle:
+    #     icon: material/brightness-7
+    #     name: Switch to dark mode
+
+    # # Palette toggle for dark mode
+    # - media: "(prefers-color-scheme: dark)"
+    #   scheme: slate
+    #   toggle:
+    #     icon: material/brightness-4
+    #     name: Switch to light mode
     
   features:
     - navigation.sections
