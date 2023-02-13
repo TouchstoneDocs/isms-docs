@@ -17,6 +17,7 @@ markdown_extensions:
   - footnotes
   - abbr
   - pymdownx.snippets
+  - pymdownx.tilde
   # - tables
 
 nav:
