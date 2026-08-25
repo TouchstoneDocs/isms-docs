@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/c/Python314/python -c ' *)",
+      "WebSearch",
+      "Bash(git rm *)",
+      "Bash(git add *)",
+      "Bash(git mv *)",
+      "Bash(python \"C:/Users/76972/AppData/Local/Temp/claude/c--Users-76972-Documents-workspace-isms-docs-isms-docs/1343dbb1-6877-46b5-8826-cd6dd7eab456/scratchpad/check_links.py\")",
+      "Bash(python -)"
+    ]
+  }
+}
